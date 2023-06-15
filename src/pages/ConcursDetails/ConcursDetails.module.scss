@@ -1,0 +1,159 @@
+// Эффекты для изображения
+// На сам класс изображения
+//  -webkit-transition: all 1s ease;
+//     -moz-transition: all 1s ease;
+//     -o-transition: all 1s ease;
+//     -ms-transition: all 1s ease;
+//     transition: all 1s ease;
+// При ховере
+// 1) -webkit-filter: blur(5px);
+@import "../../components/styles/vars/vars";
+// eslint-disable-next-line
+.concursDetailsSection {
+  padding: 0 0 40px;
+  &Poster {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    & img {
+      border-radius: 10px;
+    }
+  }
+  &TitleMain {
+    width: 685px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: bold;
+  }
+  &Tab {
+    color: #fff;
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: flex;
+    & p {
+      text-align: center;
+    }
+  }
+  &Date {
+    font-weight: bold;
+    &Title {
+      font-size: 24px;
+    }
+    &Subtitle {
+      margin-top: 15px;
+      color: $second !important;
+      font-size: 16px;
+    }
+  }
+  &BoxParticipateGroup{
+    display: flex;
+    justify-content: end;
+  }
+  &Participate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    &Group {
+      display: flex;
+      & svg {
+        vertical-align: bottom;
+      }
+      & p {
+        font-weight: bold;
+        padding-left: 10px;
+        font-size: 18px;
+        margin-top: 2px;
+      }
+    }
+  }
+  &Organizer {
+    font-size: 32px;
+  }
+  &BoxAuthor {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &Left {
+      display: flex;
+      &Info {
+        margin-left: 10px;
+        & p:nth-child(1) {
+          font-weight: bold;
+          font-size: 18px;
+        }
+        & p:nth-child(2) {
+          color: $second;
+        }
+      }
+    }
+    &Right {
+      &Btn {
+        background-color: #e8533f !important;
+      }
+      &BtnOff{
+        background-color: #ccc !important;
+        opacity: 0.7 !important;
+      }
+    }
+  }
+
+  &Description {
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    &Title {
+      margin-bottom: 10px;
+    }
+    &Text {
+      font-size: 16px;
+    }
+  }
+
+  &Nav {
+    margin: 30px 0 5px;
+   
+    &Condition {
+      margin-left: 20px;
+    }
+    &Prizes,
+    &Condition {
+      margin-bottom: 5px;
+      & a {
+        padding: 10px;
+        color: #000;
+      }
+    }
+  }
+
+  &BoxTitles,
+  &Date,
+  &Organizer {
+    margin-top: 35px;
+  }
+}
+
+.conditionSection {
+  margin-top: 10px;
+  &Title {
+    font-size: 24px;
+  }
+  & ul {
+    margin-top: 20px;
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+  }
+  &ListItem {
+    // margin: 10px 0;
+    background-color: white;
+    border-left: 3px solid rgba(61, 4, 60, 0.6);
+    padding: 5px 20px 5px 25px;
+    margin: 0 0 20px;
+  }
+}

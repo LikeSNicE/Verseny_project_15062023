@@ -1,0 +1,63 @@
+.advice{
+    color: #949494;
+}
+.containerInputAvatar{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.dragDropSection.d{
+ height: 300px;
+ overflow: auto;
+}
+
+.dragDropContainer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dragDropBorder{
+    display: inline-block;
+    border: dashed 3px #000;
+    border-image: url("http://i.stack.imgur.com/wLdVc.png") 1 round;
+}
+.dragDropContainerIcon{
+    display: block;
+    text-align: center;
+}
+
+.dragDropAdvice{
+    text-align: center;
+    color: #949494;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.dragDropContainerGap{
+    display: grid;
+    gap: 20px;
+    width: 100%;
+}
+
+.dragDropContainerBox{
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.253);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.fileUploadContainer{
+    display: block;
+    width: 350px;
+    word-wrap: break-word;
+   // padding: 5px;
+}
+
+.dragDropContainerFlex{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}

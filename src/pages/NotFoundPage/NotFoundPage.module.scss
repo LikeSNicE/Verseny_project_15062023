@@ -1,0 +1,24 @@
+.error{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 40px;
+  &Right{
+    width: 500px;
+    text-align: center;
+    margin: 60px auto 30px;
+    &Title{
+      font-size: 32px;
+      font-weight: bold;
+      line-height: 36px;
+    }
+    &Text{
+      margin-top: 15px;
+    }
+    &Button{
+      margin-top: 15px !important;
+    }
+    &Link{
+      color: #fff;
+    }
+  }
+}

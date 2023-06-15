@@ -1,0 +1,15 @@
+.ContainerCardPending{
+    &Flex{
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+    }
+    &Grid{
+        display: grid;
+    }
+    &ImgPending{
+        height: 100%;
+        width: 30%;
+        border-radius: 5px;
+    }
+}

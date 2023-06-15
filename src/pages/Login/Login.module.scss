@@ -1,0 +1,36 @@
+
+.sectionLogin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+.containerLoginLogo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.containerLogin{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.containerLoginForm{
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+    
+}
+
+.containerLoginInput{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.containerLoginFlex{
+    display:flex;
+    align-items:"center";
+}

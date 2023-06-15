@@ -1,0 +1,70 @@
+@import "../../Components/styles/vars/vars";
+
+.sectionConcursShareUser {
+  padding: 0 0 40px;
+  &Title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  &Block {
+    display: flex;
+    margin-top: 30px;
+    &Info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      &Img {
+        width: 55px !important;
+        height: 55px !important;
+        & img {
+          width: 55px !important;
+          height: 55px !important;
+        }
+      }
+      &Name {
+        font-size: 20px;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    }
+    &Upload {
+      margin-left: 60px;
+      &Date {
+        & span {
+          color: #4a4a4e;
+        }
+      }
+      &TypeParticipate {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      &Btns {
+        button + button {
+          margin-left: 10px;
+        }
+        & button:nth-child(2) {
+          background-color: #e8533f !important;
+        }
+      }
+    }
+  }
+  &Choose {
+    display: flex;
+    margin-top: 55px;
+    align-items: center;
+  }
+  &Select {
+    margin-right: 25px;
+  }
+  &ChooseBtn {
+    & a {
+      color: #fff;
+    }
+  }
+  &Table {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,39 @@
+.sectionDeleteContest {
+  &Title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  &Subtitle {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  &List {
+    list-style: none;
+    border-left: 2px solid #000;
+    margin: 15px 0;
+    & li {
+      margin-top: 5px;
+      font-size: 16px;
+      padding-left: 10px;
+    }
+  }
+  &FlexBtn {
+    display: flex;
+    justify-content: flex-end;
+    & button:nth-child(1) {
+      background-color: #e8533f !important;
+    }
+    & button + button {
+      margin-left: 10px;
+    }
+  }
+  &Item{
+    display: grid;
+    gap: 15px;
+  }
+}
+
+.notification{
+  margin: 10px 0;
+}

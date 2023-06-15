@@ -1,0 +1,28 @@
+.modalSectionTop {
+  border-bottom: 2px solid #d9d9d9;
+  padding-bottom: 20px;
+  &Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &Left {
+    display: flex;
+    align-self: flex-end;
+    align-items: center;
+
+    &Title {
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 26px;
+      margin-left: 20px;
+    }
+  }
+
+  &Right {
+  }
+}
+
+.modalContainer{
+  width: 100%;  
+}

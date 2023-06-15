@@ -1,0 +1,148 @@
+.sectionChannel {
+  padding: 0 0 40px;
+}
+
+.profileBanner {
+  position: relative;
+  &Img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+  }
+  &EditBtn {
+    font-size: 12px !important;
+    position: absolute !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 10 !important;
+    justify-content: start;
+    transition: all 1s !important;
+  }
+
+  &BtnText {
+    margin-left: 10px;
+    text-transform: none;
+  }
+}
+
+.profileSection {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  margin-bottom: 20px;
+  &Inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &Info {
+    &Left {
+      display: flex;
+      &Link {
+        width: 140px;
+        height: 140px;
+        border-radius: 50% !important;
+        background-color: rgba($color: #d9d9d9, $alpha: 1) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -75px;
+        border: none;
+        padding: 0 !important;
+        &hover {
+          border-radius: 10px !important;
+          margin-top: 20px !important;
+        }
+      }
+      &Img {
+        max-width: 140px;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      &Text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        &Name {
+          font-weight: bold;
+          font-size: 20px;
+        }
+        &Subcribers {
+          font-weight: bold;
+        }
+      }
+    }
+    &Right {
+      display: flex !important;
+      height: 40px;
+      &Icon {
+        &Share {
+          transition: all 1s;
+        }
+        &Channel {
+          border-radius: 10px !important;
+          max-width: 40px !important;
+          height: 40px !important;
+          margin-left: 10px !important;
+          & a {
+            color: #fff;
+            display: flex;
+          }
+        }
+        &BtnShare {
+          background-color: #7272d8 !important;
+        }
+
+        &BtnSetting {
+          background-color: #4a4a4e !important;
+        }
+
+        &BtnAddConcurs {
+          background-color: #f8b84a !important;
+        }
+        &Delete {
+          background-color: #e8533f !important;
+          border-radius: 10px !important;
+          width: 65px;
+          height: 40px;
+          margin-left: 10px !important;
+          & a {
+            color: #fff;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+  &Nav{
+    display: flex;
+    margin-top: -70px;
+    &Link{
+      display: block;
+      padding: 10px;
+      color: #000 !important;
+    }
+  }
+  &ModalAvatar{
+    // margin-top: 20px;
+  }
+}
+
+.editBtn {
+  background: rgba(165, 165, 165, 0.3) !important;
+  justify-content: start;
+  transition: all 1s !important;
+  color: #fff !important;
+  text-transform: inherit !important;
+  &:hover {
+    background: rgba(165, 165, 165, 1) !important;
+    border-radius: 10px !important;
+  }
+}
+
+.profileCards {
+  display: flex;
+  gap: 10px;
+  flex-flow: row wrap;
+  margin-top: 30px;
+}

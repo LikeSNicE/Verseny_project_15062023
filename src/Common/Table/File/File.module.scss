@@ -1,0 +1,10 @@
+.iconFile{
+    width: 50px;
+}
+.fileName{
+  margin-left: 10px;
+  &Link{
+    cursor: pointer;
+    color: #000;
+  }
+}

@@ -1,0 +1,13 @@
+$main: "#000";
+$second: "#4A4A4E";
+$red: "#E8533F";
+%textCut {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+%title{
+  font-size: 34px;
+  font-weight: bold;
+}

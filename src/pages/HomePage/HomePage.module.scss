@@ -1,0 +1,23 @@
+@import '../../Components/styles/vars/vars';
+.section{
+  &HomePage{
+    padding: 0 0 40px;
+    &Title{
+      @extend %title;
+    }
+    &SearchInput{
+      margin-top: 20px;
+    }
+    &Inner{
+      padding-top: 20px;
+      border-top: 2px solid #D9D9D9;
+      margin-top: 50px;
+      // display: grid;
+      // grid-template-columns: repeat(4,1fr);
+      // grid-gap: 10px;
+      display: flex;
+      gap: 10px;
+      flex-flow: row wrap;
+    }
+  }
+}

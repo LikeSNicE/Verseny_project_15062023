@@ -1,0 +1,19 @@
+[
+    {
+        "to":"/",
+        "label":"Главная",
+        "icon":"HomeOutlined"
+    },{
+        "to":"/myconcurs",
+        "label":"Мои конкурсы",
+        "icon":"CampaignOutlined"
+    },{
+        "to":"/allSubcription",
+        "label":"Подписки",
+        "icon":"SubscriptionsOutlined"
+    },{
+        "to":"/mychannel",
+        "label":"Мой канал",
+        "icon":"AirplayOutlined"
+    }
+]

@@ -1,0 +1,26 @@
+.sectionWinCon {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  &Img {
+    & img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+  }
+  &Flex {
+    &Avatar {
+      max-width: 120px;
+      width: 100%;
+    }
+    &Title {
+      // word-wrap: break-word;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin: 10px 0;
+      color: #000;
+    }
+  }
+}

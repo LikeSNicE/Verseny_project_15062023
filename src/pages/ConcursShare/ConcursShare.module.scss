@@ -1,0 +1,114 @@
+// @import "../styles/vars-colors/varsColors";
+.result {
+  padding: 0 0 40px;
+  &Top {
+    margin-bottom: 10px;
+    display: flex;
+    &Left {
+      width: 500px;
+      margin-right: 20px;
+      & img {
+        border-radius: 15px;
+      }
+    }
+    &Right {
+      width: 565px;
+      &Title {
+        font-weight: bold !important;
+        font-size: 36px !important;
+        line-height: 40px !important;
+      }
+      &Grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+      }
+      &Science {
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      &TitleDate {
+        margin-top: 30px !important;
+        font-weight: bold !important;
+      }
+      &Date {
+        // color: $second !important;
+      }
+    }
+  }
+  &Main {
+    &Table {
+      // overflow: auto;
+      // height: 480px;
+      // margin-top: 10px;
+      &AvatarBox {
+        display: flex;
+        &Left {
+          margin-right: 10px;
+        }
+        &Right {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+.member {
+  &MainTitle {
+    font-weight: bold;
+    font-size: 32px;
+  }
+  &TypeParticipation {
+    font-weight: bold;
+    margin-top: 7px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  &Count {
+    margin-top: 10px;
+    color: #4a4a4e;
+    display: flex;
+    gap: 10px;
+  }
+  &Box{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    &Right{
+      margin-left: 25px;
+      &LinkChosenWinner{
+        width: 240px !important;
+        height: 39px;
+        font-size: 14px !important;
+        padding: 10px !important;
+        & a{
+          color: #fff;
+        }
+      }
+    }
+  }
+  &Tabs{
+    margin-top: 20px;
+  }
+  &ContainerGrid{
+    display: grid;
+    gap: 7px;
+  }
+}
+
+.concursShareTable{
+  margin: 20px 0 50px;
+  &BoxName{
+    display: flex;
+    align-items: center;
+    &Img{
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

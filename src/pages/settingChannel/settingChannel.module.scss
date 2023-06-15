@@ -1,0 +1,68 @@
+.channelSettingLeft {
+  &Title {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #4a4a4e;
+    padding-bottom: 15px;
+    &Subtitle {
+      margin-left: 10px;
+    }
+  }
+  &Field {
+    display: flex;
+    align-items: center;
+    &Name {
+      width: 110px;
+      margin-top: 20px;
+    }
+    &Input {
+      max-width: 700px;
+      width: 100%;
+      margin-top: 25px;
+      input {
+        height: 20px !important;
+      }
+    }
+  }
+  &TitleDetails {
+    margin-top: 45px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &Details {
+    margin-top: 30px !important;
+    display: flex;
+    & div:nth-child(2){
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 1px solid #000;
+    }
+    &Btn {
+      border-radius: 10px !important;
+
+      border: 2px solid #7272d8 !important;
+      color: black !important;
+
+      & + & {
+        margin-left: 10px !important;
+      }
+      &Btn .selected{
+        color: red !important;
+      }
+    }
+  }
+  &TextArea{
+    height: 210px;
+    padding: 20px;
+    color: inherit;
+    resize: none;
+    // max-width: 740px;
+    border-radius: 15px;
+    border: 3px solid #ADADD7;
+    margin-top: 20px;
+    width: 100%;
+  }
+  &Btn{
+    margin-top: 10px !important;
+  }
+}

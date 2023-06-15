@@ -1,0 +1,28 @@
+.tagButton{
+  width: auto;
+  height: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 8px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 200ms linear;  
+  &::before {
+    content: attr(label);
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    align-items: center;
+  }
+  &:checked {
+    background: currentColor;
+  }
+  &:checked::before{
+    color: #fff;
+  }
+}

@@ -1,0 +1,52 @@
+.advice{
+    color: #949494;
+}
+.containerInputAvatar{
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+.dragDropContainer{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dragDropBorder{
+    display: inline-block;
+    border: dashed 3px #000;
+    border-image: url("http://i.stack.imgur.com/wLdVc.png") 1 round;
+    margin: 20px 0;
+}
+.dragDropContainerIcon{
+    display: block;
+    text-align: center;
+}
+
+.dragDropAdvice{
+    text-align: center;
+    color: #949494;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.dragDropContainerGap{
+    display: grid;
+    gap: 20px;
+}
+
+.konvajs-content{
+  width: 100%;
+  & canvas{
+    width: 100% !important;
+  }
+}
+
+.avatarCreating{
+  margin: 20px auto;
+  &Img{
+    height: 300px !important;
+  }
+  
+}

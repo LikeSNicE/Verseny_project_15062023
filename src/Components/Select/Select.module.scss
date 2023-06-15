@@ -1,0 +1,39 @@
+.MySelect{
+    // border: 1px solid #7272D8;
+    // border-radius: 10px !important;
+    // padding: 7px;
+    // color: #7272D8;
+    // font-weight: bold;
+    // font-size: 16px;
+    // width: 180px;
+    // height: 38px;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.MySelect.RadiusNone{
+    border-top-left-radius: 0% !important;
+    border-bottom-left-radius: 0% !important;
+}
+
+.labelSelect{
+    padding: 8px 14px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    background-color: #7272D8;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option{
+    font-size: 16px;
+    font-weight: bold;
+}
+.option:checked{
+    background-color: #7272D8;
+}

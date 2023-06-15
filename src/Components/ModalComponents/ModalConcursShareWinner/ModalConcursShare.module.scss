@@ -1,0 +1,92 @@
+// modal
+.modal {
+  position: relative;
+  &TopBox {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    &Icon {
+      background-color: #000000 !important;
+      border-radius: 15px !important;
+      padding: 5px !important;
+      width: 50px !important;
+      height: 50px !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      & svg {
+        color: #fff !important;
+      }
+    }
+    &Title {
+      margin-left: 25px;
+    }
+  }
+  &TopUserBox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    &Left{
+      display: flex;
+      &TextInfo{
+        margin-left: 16px;
+        & p:nth-child(1){
+          font-weight: bold;
+          font-size: 16px;
+        }
+        & p:nth-child(2){
+          color: #696969;
+        }
+      }
+    }
+    &Right{
+      display: flex;
+      &DownloadBtn{
+        margin-right: 16px;
+      }
+      
+    }
+  }
+  &Popup{
+    display: flex;
+    // position: absolute;
+    position: fixed;
+    background-color: #FFFAFA;
+    margin-top: 20px;
+    bottom: 0;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    &RemoveAllIcon{
+      margin-right: 10px;
+    }
+    &Download{
+      margin-right: 10px;
+    }
+  }
+  &TableBox{
+    overflow: auto;
+    height: 370px;
+    &FieldName,
+    &FieldFile{
+      font-weight: bold !important;
+    }
+  }
+}
+
+// Select filter
+.selectFilter{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+// .breadcrumb{
+//   margin-top: 40px;
+//   & a{
+//     color: #000;
+//   }
+//   &User{
+//     font-weight: bold;
+//   }
+// }
+

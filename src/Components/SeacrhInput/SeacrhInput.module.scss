@@ -1,0 +1,26 @@
+.SearchContainer{
+    padding: 10px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    & input{
+      border: 0;
+     background-color: #F5F5F5;
+     width: 100%;
+      &:focus{
+      outline: none;  
+      }
+    }
+}
+
+// .SearchContainer input{
+//     border: 0;
+//     background-color: #F5F5F5;
+//     width: 100%;
+// }
+
+// .SearchContainer input:focus{
+//     outline: none;
+// }

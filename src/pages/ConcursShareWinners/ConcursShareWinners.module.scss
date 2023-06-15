@@ -1,0 +1,22 @@
+.sectionConcursShareWinners{
+  padding: 0 0 40px;
+  display: block;
+  gap: 10px;
+  &Title{
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    & svg{
+      vertical-align: bottom;
+      font-size: 30px;
+    }
+  }
+  &Btn{
+    margin-top: 15px !important;
+  }
+  &NotFound{
+    display: grid;
+    text-align: center;
+    gap: 10px;
+  }
+}

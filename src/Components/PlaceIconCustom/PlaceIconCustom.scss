@@ -1,0 +1,27 @@
+.placeIcon * {
+  stroke: #7272d8;
+  color: #7272d8;
+}
+
+.placeIcon.first * {
+  stroke: #ffb800;
+  color: #ffb800;
+}
+
+.placeIcon.second * {
+  stroke: #999999;
+  color: #999999;
+}
+
+.placeIcon.third * {
+  stroke: #ff7a00;
+  color: #ff7a00;
+}
+
+.place-icon-number {
+  position: relative;
+  bottom: 48px;
+  text-align: center;
+  margin-right: 1px;
+  //  left: calc(44 - );
+}

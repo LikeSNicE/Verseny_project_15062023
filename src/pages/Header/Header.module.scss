@@ -1,0 +1,67 @@
+.BoxLinks{
+  &Item{
+    & + & {
+      margin-left: 30px;
+    }
+  }
+  &ItemActive{
+    border-bottom: 2px solid #000;
+  }
+}
+
+.menuProfile{
+  font-weight: bold;
+  &Box{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    flex-direction: row !important;
+    &Left{
+      &Company{
+        font-weight: bold;
+
+      }
+    }
+  }
+  &Items{
+    margin-top: 10px;
+  }
+  &ItemLink{
+    display: flex;
+    & svg{
+      margin-right: 10px;
+    }
+    &Text{
+      color: #000;
+    }
+  }
+}
+
+.sectionLogin{
+  &ToolBar{
+    display: flex !important;
+    justify-content: flex-end !important;
+    & button + button {
+      margin-left: 10px;
+    }
+  }
+  &BtnLogin{
+    & a{
+      color: #fff;
+    }
+  }
+  &BtnRegistration{
+     border-color: #7272D8 !important;
+    & a{
+      color: #7272D8;
+    }
+    &:hover{
+      background-color: #fff !important;
+      color: #7272D8;
+    }
+  }
+  &BtnRegistration,&BtnLogin{
+    min-height: 40px;
+    border-radius: 5px !important;
+  }
+}

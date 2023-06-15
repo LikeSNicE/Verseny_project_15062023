@@ -1,0 +1,28 @@
+[
+  {
+    "label": "Основная",
+    "path": "main",
+    "fullPath": "/mychannel/create/main"
+  },
+  {
+    "label": "Описание",
+    "path": "description",
+    "fullPath": "/mychannel/create/description"
+  },
+  {
+    "label": "Призы",
+    "path": "prizes",
+    "fullPath": "/mychannel/create/prizes"
+  },
+  {
+    "label": "Условия",
+    "path": "conditions",
+    "fullPath": "/mychannel/create/conditions"
+  }
+  ,{
+    "label": "Результат",
+    "path": "result",
+    "fullPath": "/mychannel/create/result"
+  }
+  
+]

@@ -1,0 +1,23 @@
+.Mui-completed {
+  font-weight: bold !important;
+  color: #181831;
+}
+
+.Mui-active {
+  font-weight: 500 !important;
+}
+
+
+.btnStart {
+  margin-top: 20px !important;
+}
+
+.btnFinally {
+  &Back {
+    height: 40px !important;
+  }
+  &Regist {
+    height: 39.5px !important;
+  }
+}
+

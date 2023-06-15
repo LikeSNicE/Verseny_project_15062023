@@ -1,0 +1,54 @@
+.sectionChannel {
+  padding: 0 0 40px;
+  &Poster {
+    width: 100%;
+    max-height: 270px;
+    object-fit: cover;
+  }
+  &Info {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    display: flex;
+
+    flex-direction: column;
+    &Top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &Profile {
+      display: flex;
+      &Data {
+        margin-left: 15px;
+      }
+    }
+    &RightBlock {
+      &Share {
+        margin-right: 10px !important;
+      }
+      &Subscribe {
+        background: #e8533f !important;
+      }
+    }
+
+    &Bottom{
+      margin-top: 20px;
+      display: flex;
+      &Link{
+        padding: 10px;
+        color: #000;
+      }
+      & a + a {
+        margin-left: 10px;
+      }
+    }
+  }
+  &Concurs {
+    &Inner {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-flow: row wrap;
+    }
+  }
+}

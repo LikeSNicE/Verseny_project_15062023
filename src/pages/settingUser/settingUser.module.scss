@@ -1,0 +1,38 @@
+.profileSettingLeft {
+  border-radius: 15px;
+  &Title {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #4a4a4e;
+    padding-bottom: 15px;
+    &Subtitle {
+      margin-left: 10px;
+    }
+  }
+  &Field {
+    display: flex;
+    align-items: center;
+    &Name {
+      width: 110px;
+    }
+    &Input {
+      max-width: 700px;
+      width: 100%;
+      margin-top: 25px !important;
+      input {
+        height: 20px !important;
+      }
+    }
+  }
+  &BtnRadioSection{
+    margin-top: 40px !important;
+  }
+  &BtnEdit{
+    display: block !important;
+    margin-top: 30px !important;
+  }
+}
+
+.notification{
+  margin: 10px 0;
+}

@@ -1,0 +1,89 @@
+.advice {
+  color: #949494;
+}
+.containerInputAvatar {
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+}
+.dragDropContainer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.dragDropBorder {
+  display: inline-block;
+  border: dashed 3px #000;
+  border-image: url("http://i.stack.imgur.com/wLdVc.png") 1 round;
+}
+.dragDropContainerIcon {
+  display: block;
+  text-align: center;
+}
+
+.dragDropAdvice {
+  text-align: center;
+  color: #949494;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.dragDropContainerGap {
+  display: grid;
+  gap: 20px;
+}
+
+.cropperSliderContainer {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.containerImg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.buttonDeleteImg {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 2s all ease;
+}
+
+.displayNone.buttonDeleteImgContainer {
+  bottom: 45%;
+  position: absolute;
+  display: flex;
+  left: 45%;
+  justify-content: center;
+}
+
+.displayNone {
+  display: none;
+  transition: 2s all ease;
+}
+
+.bgDelete {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  bottom: 0.1%;
+  transition: 1s all ease;
+}
+
+.input-poster-img{
+  width: 1000px !important;
+  height: 500px !important;
+  object-fit: cover;
+}

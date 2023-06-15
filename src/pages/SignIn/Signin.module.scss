@@ -1,0 +1,55 @@
+// display: "flex", justifyContent: "center", marginTop: "20px"
+
+.sectionSignin{
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.containerSignin {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 500px;
+  width: 100%;
+  padding: 0 0 40px;
+}
+
+.containerSigninLogo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerSigninForm {
+  display: grid;
+  gap: 30px;
+  max-width: 500px;
+}
+
+.containerLoading {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm {
+  &EmailImgError {
+    & img {
+      width: 300px !important;
+      height: 300px !important;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+  }
+  &EmailImgSuccess {
+    width: 300 !important;
+    height: 300px !important;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+  &AlertError{
+    margin-top: 10px;
+  }
+}

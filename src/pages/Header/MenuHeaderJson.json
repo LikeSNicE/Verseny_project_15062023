@@ -1,0 +1,12 @@
+[
+    {
+        "to":"/profileInfoChannel/setting/user",
+        "children":"Настройка аккаунта",
+        "icon":"SettingsOutlined"
+    },
+    {
+        "to":"/logout",
+        "children":"Выйти",
+        "icon":"ExitToAppOutlined"
+    }
+]
