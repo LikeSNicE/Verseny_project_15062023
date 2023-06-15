@@ -12,12 +12,11 @@ import { Context } from "../..";
 import { isFileByUrl } from "../../Common/Table/isFileByUrl/isFileToUrl";
 
 const MyChannel = () => {
-
   const VersenyLogo = Muicon["CampaignOutlined"];
   const ListFeautes = Muicon["ListAltOutlined"];
 
-  const {Authstore} = useContext(Context)
-  const {nickname,avatar,header,subcribers,description} = Authstore.user
+  const { Authstore } = useContext(Context);
+  const { nickname, avatar, header, subcribers, description } = Authstore.user;
 
   const DataTabs = [
     {
@@ -33,7 +32,7 @@ const MyChannel = () => {
       icon: <ListFeautes />,
     },
   ];
-  
+
   return (
     <div className={styles.sectionChannel}>
       <div className={styles.profileBanner}>
@@ -62,7 +61,9 @@ const MyChannel = () => {
               </div>
             </div>
             <div className={styles.profileSectionInfoLeftText}>
-              <p className={styles.profileSectionInfoLeftTextName}>{nickname}</p>
+              <p className={styles.profileSectionInfoLeftTextName}>
+                {nickname}
+              </p>
               <p className={styles.profileSectionInfoLeftTextSubcribers}>
                 {subcribers} подписчиков
               </p>
@@ -72,45 +73,37 @@ const MyChannel = () => {
           <div className={styles.profileSectionInfoRight}>
             <div>
               <div className={styles.profileSectionInfoRightIconSetting}>
-                <Button
-                  className={
-                    styles.profileSectionInfoRightIconChannel +
-                    " " +
-                    styles.profileSectionInfoRightIconBtnSetting
-                  }
-                >
-                  <TooltipCustom
-                    placement="top"
-                    titleText={"Настройки канала"}
-                    children={
-                      <Link to={"/profileInfoChannel/setting/user"}>
-                        <Muicon.SettingsOutlined />
-                      </Link>
-                    }
-                  />
-                </Button>
+                <Link to={"/profileInfoChannel/setting/user"}>
+                  <TooltipCustom placement="top" titleText={"Настройки канала"}>
+                    <Button
+                      className={
+                        styles.profileSectionInfoRightIconChannel +
+                        " " +
+                        styles.profileSectionInfoRightIconBtnSetting
+                      }
+                    >
+                      <Muicon.SettingsOutlined />
+                    </Button>
+                  </TooltipCustom>
+                </Link>
               </div>
             </div>
 
             <div>
               <div className={styles.profileSectionInfoRightIconAddConcurs}>
-                <Button
-                  className={
-                    styles.profileSectionInfoRightIconChannel +
-                    " " +
-                    styles.profileSectionInfoRightIconBtnAddConcurs
-                  }
-                >
-                  <TooltipCustom
-                    placement="top"
-                    titleText={"Добавить конкурс"}
-                    children={
-                      <Link to="/mychannel/create/main">
-                        <Muicon.AddOutlined />
-                      </Link>
-                    }
-                  />
-                </Button>
+                <Link to="/mychannel/create/main">
+                  <TooltipCustom placement="top" titleText={"Добавить конкурс"}>
+                    <Button
+                      className={
+                        styles.profileSectionInfoRightIconChannel +
+                        " " +
+                        styles.profileSectionInfoRightIconBtnAddConcurs
+                      }
+                    >
+                      <Muicon.AddOutlined />
+                    </Button>
+                  </TooltipCustom>
+                </Link>
               </div>
             </div>
           </div>

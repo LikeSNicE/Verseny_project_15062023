@@ -51,7 +51,7 @@ const App = () => {
     <div>
       <Header />
       <Container
-        style={{ maxWidth: "1090px", padding: "0 10px", margin: "0 auto" }}
+        style={{ maxWidth: "1110px", padding: "0 10px", margin: "0 auto" }}
       >
         <Routes>
           <Route element={<ProtectedRoute user={Authstore.isAuth} redirectPath="/login" />}>

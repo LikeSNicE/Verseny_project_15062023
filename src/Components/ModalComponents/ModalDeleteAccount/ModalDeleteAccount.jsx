@@ -20,16 +20,16 @@ const ModalDeleteAccount = () => {
         iconTopSectiontext="Удалить аккаунт"
         btnStyles={styles.modalSectionTopLeftIcon}
         btnLabel={
-          <div
-            className={styles.modalSectionTopLeftIcon}
-            onClick={() => setIsOpen(true)}
-          >
-            <TooltipCustom placement="top" titleText="Удалить канал">
+          <TooltipCustom placement="top" titleText="Удалить канал">
+            <div
+              className={styles.modalSectionTopLeftIcon}
+              onClick={() => setIsOpen(true)}
+            >
               <div style={{ display: "flex" }}>
                 <DeleteOutlineOutlinedIcon />
               </div>
-            </TooltipCustom>
-          </div>
+            </div>
+          </TooltipCustom>
         }
         open={isOpen}
         setIsOpen={setIsOpen}

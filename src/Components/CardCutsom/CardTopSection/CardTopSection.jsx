@@ -1,6 +1,5 @@
 import React from "react";
 import * as Muicon from "@mui/icons-material";
-// import styles from './CardTopSection.module.scss';
 import './CardTopSection.scss'
 
 export default function CardTopSection({ data }) {
