@@ -27,7 +27,7 @@ const FilterBlockCustom = ({getTagButton,getSort}) => {
     Conteststore.GetCategoriesAndTypes().then(responce => {
       setCategory(responce.categories)
     });
-    setSortToCallBack("1");
+    // setSortToCallBack("1");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
