@@ -111,6 +111,7 @@ const ProfileInfoChannel = () => {
                 TopSectiontext="Изменение фото профиля"
                 open={isAvatar}
                 setIsOpen={setIsAvatar}
+                heightModal={isAvatar === false && true ? 'auto' : '70%'}
               >
                 <InputAvatarModal setIsOpen={setIsAvatar} />
               </ModalCustom>

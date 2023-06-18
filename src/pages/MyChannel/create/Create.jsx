@@ -49,7 +49,7 @@ const CreateComponent = () => {
           activeStep={step}
           stepRoute={stepperData}
           buttonStepperText={{
-            finallyButton: "Зарегистрируетесь",
+            finallyButton: "Создать конкурс",
             nextButton: "Далее",
             loading:Conteststore.isLoadingButton
           }}

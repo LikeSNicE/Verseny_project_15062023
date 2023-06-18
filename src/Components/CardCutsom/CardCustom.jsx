@@ -12,22 +12,23 @@ export default function CardCustom({ dataCard, children }) {
   return (
     <div className={styles.containerCard}>
       <CardTopSection data={dataCard} />
-      <img
-        src={dataCard.concurs.img}
-        alt={dataCard.concurs.name}
-        style={{ objectFit: "cover" }}
-        height="170px"
-        width="100%"
-      />
+      <Link className={styles.linkText} to={`/concurs/${dataCard.concurs.id}`}>
+        <img
+          src={dataCard.concurs.img}
+          alt={dataCard.concurs.name}
+          style={{ objectFit: "cover" }}
+          height="170px"
+          width="100%"
+        />
+        <h4 className={styles.textCard}>{dataCard.concurs.name}</h4>
+      </Link>
+
       <div className={styles.blockCard + " " + styles.blockBoxShadow}>
-        <Link className={styles.linkText} to={`/concurs/${dataCard.concurs.id}`}>
-          <h4 className={styles.textCard}>{dataCard.concurs.name}</h4>
-        </Link>
-          <AvatarCustom
-            data={{...dataCard.author,link:`/channel/${dataCard.author.id}`}}
-            sizeAvatar={{ width: "30px", height: "30px" }}
-            fontSize={{ name: "16px", description: "13px" }}
-          />
+        <AvatarCustom
+          data={{ ...dataCard.author, link: `/channel/${dataCard.author.id}` }}
+          sizeAvatar={{ width: "30px", height: "30px" }}
+          fontSize={{ name: "16px", description: "13px" }}
+        />
         <div style={{ width: "100%", overflow: "hidden" }}>
           <h4 className={styles.textTypeCard + " " + styles.textOverflow}>
             Тип участия:
@@ -44,9 +45,7 @@ export default function CardCustom({ dataCard, children }) {
             <h4>{dataCard.concurs.participant}</h4>
           </div>
         </div>
-        <div>
-         {children}
-        </div>
+        <div>{children}</div>
       </div>
     </div>
   );

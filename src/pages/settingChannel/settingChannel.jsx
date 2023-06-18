@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AirplayOutlinedIcon from "@mui/icons-material/AirplayOutlined";
 import InputCustom from "../../Components/InputCustom/InputCustom";
 import styles from "./settingChannel.module.scss";
@@ -6,24 +6,32 @@ import ButtonCustom from "../../Components/ButtonCustom/ButtonCustom";
 import { useForm } from "react-hook-form";
 import { useContext } from "react";
 import { Context } from "../..";
+import AlertCustom from "../../Components/AlertCustom/AlertCustom";
 
 const SettingChannel = () => {
-
-  const {handleSubmit,setValue,formState:{isValid},reset,register} = useForm();
-  const {Authstore} = useContext(Context)
-
+  const {
+    handleSubmit,
+    setValue,
+    formState: { isValid },
+    reset,
+    register,
+  } = useForm();
+  const { Authstore } = useContext(Context);
+  const [message, setMessage] = useState("");
+  const [severity, setSeverity] = useState("error");
 
   useEffect(() => {
     reset({
       nickname: Authstore.user.nickname,
-      description: Authstore.user.description
-    })
-  },[reset,Authstore.user])
+      description: Authstore.user.description,
+    });
+  }, [reset, Authstore.user]);
 
   const onSubmit = (data) => {
-    Authstore.updateDataChannel(data,Authstore.user.channel_id)
-   
-  }
+    Authstore.updateDataChannel(data, Authstore.user.channel_id);
+    setMessage("Вы успешно обновили данные :)");
+    setSeverity("success");
+  };
 
   return (
     <form
@@ -57,8 +65,16 @@ const SettingChannel = () => {
         placeholder="Введите подробности"
         className={styles.channelSettingLeftTextArea}
       >
-       {Authstore.user.description}
+        {Authstore.user.description}
       </textarea>
+
+      <div className={styles.notification}>
+        <AlertCustom
+          severity={severity}
+          error={message}
+          setError={setMessage}
+        />
+      </div>
 
       <ButtonCustom
         type="submit"

@@ -56,7 +56,7 @@ export default function InputAvatar({ getAvatar, defaultAvatar }) {
             onClose={onClose}
             onCrop={onCrop}
             cropRadius={0}
-            imageHeight={600}
+            imageHeight={400}
           />
         </div>
         <div style={{ display: "flex" }}>
